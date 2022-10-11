@@ -1,0 +1,39 @@
+html {
+    /* Style everything with a specific font */
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+body {
+    color: rgba(143, 195, 191, 0.9);
+    background-color: rgb(53, 71, 50);
+    margin: 10px 2vw 0 2vw;
+}
+h1, h2, h3, h4, h5, h6 {
+    /* heading levels 1-6 in a differnet font */
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: rgba(223, 210, 227, 0.8);
+}
+h1 { font-size: 2.25rem; }
+h2 { font-size: 2rem; margin-top: 40px;  margin-bottom: 20px; }
+h3 { font-size: 1.75rem; margin-top: 35px; margin-bottom: 20px; }
+.material-icons.va-middle {
+    /* helper class for Material Icons to Verticaly Align Middle */
+    vertical-align: middle;
+    line-height: 1em;
+}
+p {
+    font-size: 1rem;
+}
+a {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+a:hover {
+    background-color: rgb(25, 55, 115);
+}
+a.navlink {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.8rem;
+}
