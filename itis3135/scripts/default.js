@@ -33,7 +33,7 @@ function pick_Random_Cake() {
 function pick_Random_Bread() {
     var Bread = ["Banana, Baguette, Breadstick, Brioche, Challah, Ciabatta"];
     var randomNumber = Math.floor(Math.random()*Bread.length);
-    alert("Your random Non-caffinated Drink is  " + Bread[randomNumber] + ". ");
+    alert("Your random Bread is  " + Bread[randomNumber] + ". ");
 
 }
 function email_Discounts() {
