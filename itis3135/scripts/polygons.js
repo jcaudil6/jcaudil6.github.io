@@ -78,7 +78,7 @@ function getShape(sides) {
 }
 
 function valid(sides) {
-    if (sides == 'number') {
+    if (typeof sides == 'number') {
         if (sides >= -10 && sides <= 10) {
             return (sides == sides);
         }
