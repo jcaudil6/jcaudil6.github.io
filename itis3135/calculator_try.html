@@ -4,7 +4,7 @@
     <title>Jacob Caudill ITIS 3135 </title>
     <meta name="description" content="3135 Activity">
     <meta charset="UTF-8">
-    <link href="styles/default.css"  rel="stylesheet" type="text/css" > 
+    <link href="styles/calculator.css"  rel="stylesheet" type="text/css" > 
     <script src="scripts/calculator_try.js"></script>
     
 </head>
@@ -39,24 +39,25 @@
     <main>
         <h2>Calculator Attempt</h2>
 
-        <button type="button" onclick="pickNumber(0)">0</button>
-        <button type="button" onclick="pickNumber(1)">1</button>
-        <button type="button" onclick="pickNumber(2)">2</button>
-        <button type="button" onclick="pickNumber(3)">3</button>
-        <button type="button" onclick="pickNumber(4)">4</button>
-        <button type="button" onclick="pickNumber(5)">5</button>
-        <button type="button" onclick="pickNumber(6)">6</button>
-        <button type="button" onclick="pickNumber(7)">7</button>
-        <button type="button" onclick="pickNumber(8)">8</button>
-        <button type="button" onclick="pickNumber(9)">9</button>
-        <button type="button" onclick="pickNumber('.')">+</button>
-        <button type="button" onclick="pickNumber('+')">-</button>
-        <button type="button" onclick="pickNumber('-')">*</button>
-        <button type="button" onclick="pickNumber('*')">/</button>
-        <button type="button" onclick="pickNumber('/')">*</button>
-        <button type="button" onclick="pickNumber('=')">=</button>
-        
-        <p id="printResult"> </p>
+       <div class="keys">
+        <button class="operator" data-action="add">+</button>
+        <button class="operator" data-action="subtract">-</button>
+        <button class="operator" data-action="multiply">*</button>
+        <button class="operator" data-action="divide">/</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>0</button>
+        <button data-action="decmila">.</button>
+        <button data-action="clear">AC</button>
+        <button class="equals" data-action="solve">=</button>
+       </div>
         
     
     </main>
