@@ -10,7 +10,7 @@ const thisFunction = () => {
             shapeSides = getError();
         }
         else {
-            shapeSides = getShape(sides);
+            var newShape = getShape(shapeSides);
         }
     }
 }
@@ -77,5 +77,13 @@ function getShape(sides) {
 
     }
     return sides;
+}
+
+function validNumber(sides) {
+    if (sides == 'num'){
+    if (sides >= -10 && sides <= 10){
+        return sides;
+    }
+}
 }
 
