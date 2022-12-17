@@ -1,16 +1,14 @@
-
 const thisFunction = () => {
     var shapeSides = getNumber();
     var i = 0;
     while (i == 0) {
-        if (i < 10) {
-            shapeSides = getError();
-        }
-        if (i > 10) {
-            shapeSides = getError();
+        if (valid(shapeSides)) {
+            var shape = getShape(shapeSides);
+            alert(shape);
+            i = 1;
         }
         else {
-            var newShape = getShape(shapeSides);
+            shapeSides = getError();
         }
     }
 }
@@ -27,63 +25,63 @@ function getShape(sides) {
     sides = Math.round(Math.abs(sides));
 
     if (sides == 0) {
-        sides = "A polygon with this many sides does not exis";
+        sides = "You can't have a polygon with no sides";
 
     }
     else if (sides == 1) {
-        sides = "A polygon with 1 side is a Henagon";
+        sides = "You've chosen a Henagon";
     }
 
     else if (sides == 2) {
-        sides = "A polygon with 2 side is a Digon";
+        sides = "You've chosen a Digon";
 
     }
 
     else if (sides == 3) {
-        sides = "A polygon with 3 side is a Trigon";
+        sides = "You've chosen a Trigon";
 
     }
 
     else if (sides == 4) {
-        sides = "A polygon with 4 side is a Tetragon";
+        sides = "You've chosen a Tetragon";
 
     }
 
     else if (sides == 5) {
-        sides = "A polygon with 5 side is a pentagon";
+        sides = "You've chosen a Pentagon";
 
     }
     else if (sides == 6) {
-        sides = "A polygon with 6 side is a Hexagon";
+        sides = "You've chosen a Hexagon";
 
     }
     else if (sides == 7) {
-        sides = "A polygon with 7 side is a Heptagon";
+        sides = "You've chosen a Heptagon";
 
     }
 
     else if (sides == 8) {
-        sides = "A polygon with 8 side is a Octagon";
+        sides = "You've chosen a Octagon";
 
     }
     else if (sides == 9) {
-        sides = "A polygon with 9 side is a Nonagon";
+        sides = "You've chosen a Nonagon";
 
     }
 
     else if (sides == 10) {
-        sides = "A polygon with 10 side is a Decagon";
+        sides = "You've chosen a Decagon";
 
 
     }
     return sides;
 }
 
-function validNumber(sides) {
-    if (sides == 'num'){
-    if (sides >= -10 && sides <= 10){
-        return sides;
+function valid(sides) {
+    if (sides == 'number') {
+        if (sides >= -10 && sides <= 10) {
+            return (sides == sides);
+        }
     }
-}
 }
 
